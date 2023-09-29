@@ -5,4 +5,5 @@
     <color name="primary">#0093DA</color>
     <color name="textbold">#2A2C2B</color>
     <color name="success">#00BD6F</color>
+    <color name="placeholder">#667085</color>
 </resources>

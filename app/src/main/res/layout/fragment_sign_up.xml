@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.auth.SignUpFragment">
+    tools:context=".views.auth.SignUp.SignUpFragment">
 
 
     <ImageView
@@ -33,17 +33,16 @@
 
     <TextView
         android:id="@+id/openaccount"
-        android:layout_width="160dp"
+        android:layout_width="187dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:textAlignment="center"
-        android:textFontWeight="700"
-        android:textStyle="bold"
+        android:layout_marginTop="38dp"
         android:text="Open an account in a minutes"
+        android:textAlignment="center"
         android:textColor="#2A2C2B"
+        android:textFontWeight="700"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signupImage" />
 
@@ -52,13 +51,15 @@
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
-        android:drawableBottom="@drawable/button_background"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="24dp"
         android:backgroundTint="@color/primary"
+        android:drawableBottom="@drawable/button_background"
         android:text="Open an Account"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="14sp"
+        app:cornerRadius="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,22 +76,34 @@
         android:text="Login"
         android:textAllCaps="false"
         android:textColor="@color/primary"
+        app:cornerRadius="5dp"
         app:layout_constraintEnd_toEndOf="@+id/openaccountbutton"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/openaccountbutton"
         app:layout_constraintTop_toBottomOf="@+id/openaccountbutton"
         app:strokeColor="@color/primary"
-        app:strokeWidth="5dp" />
+        app:strokeWidth="1dp" />
 
     <TextView
         android:id="@+id/alreadyhave"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="64dp"
         android:text="Already have an account?"
-        android:textColor=""
-        app:layout_constraintEnd_toEndOf="@+id/login"
-        app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="40dp"
+        android:text="Get login details"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/login"
+        app:layout_constraintStart_toEndOf="@+id/alreadyhave"
         app:layout_constraintTop_toBottomOf="@+id/login" />
 </androidx.constraintlayout.widget.ConstraintLayout>

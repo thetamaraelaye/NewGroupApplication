@@ -7,4 +7,8 @@
     <color name="heading">#1D2939</color>
     <color name="success">#00BD6F</color>
     <color name="placeholder">#667085</color>
+    <color name="sign_up_btn_border">#EAECF0</color>
+    <color name="sign_up_btn_text">#98A2B3</color>
+    <color name="sign_up_mainheader_color">#1C2129</color>
+    <color name="sign_up_subheader_color">#2A2C2B</color>
 </resources>

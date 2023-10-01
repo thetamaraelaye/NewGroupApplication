@@ -4,6 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primary">#0093DA</color>
     <color name="textbold">#2A2C2B</color>
+    <color name="heading">#1D2939</color>
     <color name="success">#00BD6F</color>
     <color name="placeholder">#667085</color>
 </resources>

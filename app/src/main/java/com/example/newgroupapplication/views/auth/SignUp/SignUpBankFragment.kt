@@ -10,6 +10,7 @@ import com.example.newgroupapplication.R
 
 class SignUpBankFragment : Fragment() {
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

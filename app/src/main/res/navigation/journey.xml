@@ -30,10 +30,19 @@
         android:id="@+id/signUpPersonalFragment"
         android:name="com.example.newgroupapplication.views.auth.SignUp.SignUpPersonalFragment"
         android:label="fragment_sign_up_personal"
-        tools:layout="@layout/fragment_sign_up_personal" />
+        tools:layout="@layout/fragment_sign_up_personal" >
+        <action
+            android:id="@+id/action_signUpPersonalFragment_to_signUpAddressFragment"
+            app:destination="@id/signUpAddressFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.newgroupapplication.views.auth.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/signUpAddressFragment"
+        android:name="com.example.newgroupapplication.views.auth.SignUp.SignUpAddressFragment"
+        android:label="fragment_sign_up_address"
+        tools:layout="@layout/fragment_sign_up_address" />
 </navigation>

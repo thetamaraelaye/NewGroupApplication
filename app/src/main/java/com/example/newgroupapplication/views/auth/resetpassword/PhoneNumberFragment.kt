@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.example.newgroupapplication.R
 import com.example.newgroupapplication.databinding.FragmentPhoneNumberBinding
 
 
@@ -25,6 +27,14 @@ class PhoneNumberFragment : Fragment() {
     }
 
     private fun doResetStepOne(){
+        //navigate to previous screen
+        binding.imageView5.setOnClickListener{
+            findNavController().popBackStack()
+        }
+        //navigate to next screen on buttonm click
+        binding.sendotpbutton.setOnClickListener {
+            findNavController().navigate(R.id.action_phoneNumberFragment_to_OTPFragment)
+        }
 
     }
 

@@ -1,4 +1,4 @@
-package com.example.newgroupapplication.views.auth.SignUp
+package com.example.newgroupapplication.views.auth.resetpassword
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,33 +6,28 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.newgroupapplication.databinding.FragmentSignUpBankBinding
+import com.example.newgroupapplication.databinding.FragmentCreatePasswordBinding
 
+class CreatePasswordFragment : Fragment() {
 
-class SignUpBankFragment : Fragment() {
-
-    private lateinit var binding : FragmentSignUpBankBinding
+    private lateinit var binding: FragmentCreatePasswordBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentSignUpBankBinding.inflate(layoutInflater)
+        binding = FragmentCreatePasswordBinding.inflate(layoutInflater)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        doSignUpBank()
+        handleCreatePassword()
     }
 
-    private fun doSignUpBank (){
-        binding.imageView6.setOnClickListener{
+    private fun handleCreatePassword (){
+        binding.backArrow.setOnClickListener{
             findNavController().popBackStack()
         }
-
-
-
-
-    }
+}
 
 }

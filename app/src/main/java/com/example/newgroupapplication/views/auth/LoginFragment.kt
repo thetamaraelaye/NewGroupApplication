@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.newgroupapplication.R
 import com.example.newgroupapplication.databinding.FragmentLoginBinding
 
 
@@ -28,6 +29,11 @@ class LoginFragment : Fragment() {
     private fun doLogin() {
         binding.backArrow.setOnClickListener{
             findNavController().popBackStack()
+        }
+
+        //navigate to reset password page one
+        binding.forgotpw.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_phoneNumberFragment)
         }
     }
 

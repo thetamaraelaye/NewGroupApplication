@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/journey"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.newgroupapplication.views.auth.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.newgroupapplication.views.auth.SignUp.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_signUpPersonalFragment"
+            app:destination="@id/signUpPersonalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpPersonalFragment"
+        android:name="com.example.newgroupapplication.views.auth.SignUp.SignUpPersonalFragment"
+        android:label="fragment_sign_up_personal"
+        tools:layout="@layout/fragment_sign_up_personal" >
+        <action
+            android:id="@+id/action_signUpPersonalFragment_to_signUpAddressFragment"
+            app:destination="@id/signUpAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.newgroupapplication.views.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_phoneNumberFragment"
+            app:destination="@id/phoneNumberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpAddressFragment"
+        android:name="com.example.newgroupapplication.views.auth.SignUp.SignUpAddressFragment"
+        android:label="fragment_sign_up_address"
+        tools:layout="@layout/fragment_sign_up_address" >
+        <action
+            android:id="@+id/action_signUpAddressFragment_to_signUpBankFragment"
+            app:destination="@id/signUpBankFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpBankFragment"
+        android:name="com.example.newgroupapplication.views.auth.SignUp.SignUpBankFragment"
+        android:label="fragment_sign_up_bank"
+        tools:layout="@layout/fragment_sign_up_bank" />
+    <fragment
+        android:id="@+id/phoneNumberFragment"
+        android:name="com.example.newgroupapplication.views.auth.resetpassword.PhoneNumberFragment"
+        android:label="fragment_phone_number"
+        tools:layout="@layout/fragment_phone_number" >
+        <action
+            android:id="@+id/action_phoneNumberFragment_to_OTPFragment"
+            app:destination="@id/OTPFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/OTPFragment"
+        android:name="com.example.newgroupapplication.views.auth.resetpassword.OTPFragment"
+        android:label="fragment_o_t_p"
+        tools:layout="@layout/fragment_o_t_p" >
+        <action
+            android:id="@+id/action_OTPFragment_to_createPasswordFragment"
+            app:destination="@id/createPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPasswordFragment"
+        android:name="com.example.newgroupapplication.views.auth.resetpassword.CreatePasswordFragment"
+        android:label="fragment_create_password"
+        tools:layout="@layout/fragment_create_password" />
+</navigation>

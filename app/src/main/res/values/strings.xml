@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">NewGroupApplication</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="sign_up_no_bvn"><a href="example.com" color="@color/primary"><u value="false">I don't have a BVN</u></a></string>
+    <string name="sign_up_no_bvn">I don\'t have a BVN (<a href="example.com" color="@color/primary">learn more</a>)</string>
 </resources>

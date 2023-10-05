@@ -63,6 +63,8 @@
         android:layout_height="50dp"
         android:layout_marginTop="252dp"
         android:backgroundTint="@color/primary"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:text="Send OTP"
         android:textColorHighlight="@color/primary"
         android:textColorLink="@color/primary"

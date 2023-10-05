@@ -109,6 +109,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="65dp"
         android:backgroundTint="@color/primary"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:text="Proceed"
         android:textColorHighlight="@color/primary"
         android:textColorLink="@color/primary"

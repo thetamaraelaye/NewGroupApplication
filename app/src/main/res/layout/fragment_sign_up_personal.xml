@@ -118,7 +118,7 @@
         android:id="@+id/textInputLayout4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:textColorHint="@color/sign_up_btn_text"
         app:boxBackgroundMode="outline"
         app:boxStrokeColor="@color/sign_up_btn_border"
@@ -129,15 +129,15 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="phone"
-            android:hint="*Phone number" />
+            android:hint="*Phone number"
+            android:inputType="phone" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:textColorHint="@color/sign_up_btn_text"
         app:boxStrokeColor="@color/sign_up_btn_border"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
@@ -147,15 +147,15 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:hint="Email" />
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:textColorHint="@color/sign_up_btn_text"
         app:boxStrokeColor="@color/sign_up_btn_border"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout5"
@@ -165,15 +165,15 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="date"
-            android:hint="*Date of Birth" />
+            android:hint="*Date of Birth"
+            android:inputType="date" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout7"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:textColorHint="@color/sign_up_btn_text"
         app:boxStrokeColor="@color/sign_up_btn_border"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout6"
@@ -192,6 +192,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:backgroundTint="@color/primary"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:text="Proceed"
         android:textColorHighlight="@color/primary"
         android:textColorLink="@color/primary"
@@ -204,7 +206,7 @@
         android:id="@+id/textInputLayout10"
         android:layout_width="72dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:textColorHint="@color/sign_up_btn_text"
         app:boxStrokeColor="@color/sign_up_btn_border"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout3"
@@ -213,8 +215,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="phone"
             android:hint="+234"
+            android:inputType="phone"
             android:textAlignment="center" />
     </com.google.android.material.textfield.TextInputLayout>
 

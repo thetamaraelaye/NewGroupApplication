@@ -99,9 +99,9 @@
         android:id="@+id/textInputLayout8"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="18dp"
-        android:layout_marginEnd="22dp"
+        android:layout_marginEnd="20dp"
         android:textColorHint="@color/sign_up_btn_text"
         app:boxStrokeColor="@color/sign_up_btn_border"
         app:layout_constraintEnd_toEndOf="parent"
@@ -111,8 +111,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="*Residential address" />
+            android:hint="*Residential address"
+            android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton

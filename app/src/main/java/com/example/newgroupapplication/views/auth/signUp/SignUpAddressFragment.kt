@@ -36,6 +36,11 @@ class SignUpAddressFragment : Fragment() {
             findNavController().navigate(R.id.action_signUpAddressFragment_to_signUpBankFragment)
         }
 
+        //close the signup process
+        binding.imageView7.setOnClickListener{
+            findNavController().navigate(R.id.action_signUpAddressFragment_to_signUpFragment)
+        }
+
 
     }
 

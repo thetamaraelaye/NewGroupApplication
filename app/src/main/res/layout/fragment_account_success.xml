@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.auth.SignUp.AccountSuccessFragment">
+    tools:context=".views.auth.signUp.AccountSuccessFragment">
 
 
     <ImageView
@@ -40,6 +40,7 @@
         android:layout_marginEnd="45dp"
         android:textSize="14sp"
         android:textColor="#702A2C2B"
+        android:textStyle="normal"
         android:text="You have created an account successfully. Your account number is 0654321891"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

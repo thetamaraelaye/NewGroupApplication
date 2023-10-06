@@ -1,4 +1,4 @@
-package com.example.newgroupapplication.views.auth.SignUp
+package com.example.newgroupapplication.views.auth.signUp
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -17,7 +17,6 @@ class SignUpAddressFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         binding = FragmentSignUpAddressBinding.inflate(layoutInflater)
         return binding.root
     }
@@ -37,7 +36,10 @@ class SignUpAddressFragment : Fragment() {
             findNavController().navigate(R.id.action_signUpAddressFragment_to_signUpBankFragment)
         }
 
-
+        //close the signup process
+        binding.imageView7.setOnClickListener{
+            findNavController().navigate(R.id.action_signUpAddressFragment_to_signUpFragment)
+        }
 
 
     }

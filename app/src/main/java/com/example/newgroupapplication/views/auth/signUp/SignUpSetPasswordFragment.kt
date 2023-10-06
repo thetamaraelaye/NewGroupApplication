@@ -35,6 +35,11 @@ class SignUpSetPasswordFragment : Fragment() {
         binding.button6.setOnClickListener {
             findNavController().navigate(R.id.action_signUpSetPasswordFragment_to_signUpSetPasswordLoadingFragment)
         }
+
+        //close the signup process
+        binding.imageView19.setOnClickListener{
+            findNavController().navigate(R.id.action_signUpSetPasswordFragment_to_signUpFragment)
+        }
     }
 
 }

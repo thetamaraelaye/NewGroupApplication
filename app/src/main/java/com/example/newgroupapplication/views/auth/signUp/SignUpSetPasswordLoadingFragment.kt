@@ -1,4 +1,4 @@
-package com.example.newgroupapplication.views.auth.SignUp
+package com.example.newgroupapplication.views.auth.signUp
 
 import android.os.Bundle
 import android.os.Handler

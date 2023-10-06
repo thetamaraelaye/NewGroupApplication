@@ -1,4 +1,4 @@
-package com.example.newgroupapplication.views.auth.SignUp
+package com.example.newgroupapplication.views.auth.signUp
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -33,6 +33,11 @@ class SignUpPersonalFragment : Fragment() {
         //navigate to signup address screen
         binding.button2.setOnClickListener {
             findNavController().navigate(R.id.action_signUpPersonalFragment_to_signUpAddressFragment)
+        }
+
+        //close the signup process
+        binding.imageView9.setOnClickListener{
+            findNavController().navigate(R.id.action_signUpPersonalFragment_to_signUpFragment)
         }
 
 

@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.auth.SignUp.SignUpAddressFragment">
+    tools:context=".views.auth.signUp.SignUpAddressFragment">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout11"
-        android:layout_width="353dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:textColorHint="@color/sign_up_btn_text"
@@ -20,13 +20,13 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="*LGA" />
+            android:hint="*LGA"
+            android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout9"
-        android:layout_width="353dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:textColorHint="@color/sign_up_btn_text"
@@ -38,8 +38,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="*State of Residence" />
+            android:hint="*State of Residence"
+            android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView

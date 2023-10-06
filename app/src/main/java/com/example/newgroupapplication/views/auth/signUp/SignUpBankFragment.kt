@@ -36,6 +36,12 @@ class SignUpBankFragment : Fragment() {
         binding.button3.setOnClickListener {
             findNavController().navigate(R.id.action_signUpBankFragment_to_signUpVerificationFragment)
         }
+
+
+        //close the signup process
+        binding.imageView10.setOnClickListener{
+            findNavController().navigate(R.id.action_signUpBankFragment_to_signUpFragment)
+        }
     }
 
 }

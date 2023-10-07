@@ -13,6 +13,7 @@ import com.example.newgroupapplication.databinding.FragmentLoginBinding
 class LoginFragment : Fragment() {
     private lateinit var binding: FragmentLoginBinding
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -33,7 +34,7 @@ class LoginFragment : Fragment() {
 
         //navigate to reset password page one
         binding.forgotpw.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_phoneNumberFragment)
+            findNavController().navigate(R.id.sendMoneyBottomSheetFragment)
         }
     }
 

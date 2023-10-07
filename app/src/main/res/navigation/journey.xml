@@ -133,4 +133,9 @@
             app:destination="@id/accountSuccessFragment" />
     </fragment>
     <action android:id="@+id/action_global_signUpFragment" app:destination="@id/signUpFragment" />
+    <dialog
+        android:id="@+id/sendMoneyBottomSheetFragment"
+        android:name="com.example.newgroupapplication.views.bottomsheet.SendMoneyBottomSheetFragment"
+        android:label="fragment_send_money_bottom_sheet"
+        tools:layout="@layout/fragment_send_money_bottom_sheet" />
 </navigation>

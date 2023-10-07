@@ -1,4 +1,4 @@
-package com.example.newgroupapplication.views.auth
+package com.example.newgroupapplication.views.auth.signUp
 
 import android.os.Bundle
 import android.os.Handler
@@ -8,32 +8,29 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.newgroupapplication.R
-import com.example.newgroupapplication.databinding.FragmentSplashScreenBinding
+import com.example.newgroupapplication.databinding.FragmentSignUpSetPasswordLoadingBinding
 
+class SignUpSetPasswordLoadingFragment : Fragment() {
 
-class SplashScreenFragment : Fragment() {
-
-    private lateinit var binding: FragmentSplashScreenBinding
+    private lateinit var binding: FragmentSignUpSetPasswordLoadingBinding
     var handler: Handler? = null
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentSplashScreenBinding.inflate(layoutInflater)
+        binding = FragmentSignUpSetPasswordLoadingBinding.inflate(layoutInflater)
         return binding.root
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        doSplashScreen()
+        handleSetPasswordLoading()
     }
 
-    private fun doSplashScreen () {
+    private fun handleSetPasswordLoading() {
         handler = Handler()
         handler!!.postDelayed({
-            findNavController().navigate(R.id.action_splashScreenFragment_to_signUpFragment)
-        }, 3000)
+            findNavController().navigate(R.id.action_signUpSetPasswordLoadingFragment_to_accountSuccessFragment)
+        }, 2000)
     }
-
 
 }

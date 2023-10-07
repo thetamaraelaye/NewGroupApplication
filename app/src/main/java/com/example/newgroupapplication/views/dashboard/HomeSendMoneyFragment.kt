@@ -12,9 +12,6 @@ import com.example.newgroupapplication.databinding.FragmentHomeSendMoneyBinding
 class HomeSendMoneyFragment : Fragment() {
     private lateinit var binding: FragmentHomeSendMoneyBinding
 
-
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

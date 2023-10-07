@@ -33,7 +33,7 @@ class LoginFragment : Fragment() {
 
         //navigate to reset password page one
         binding.forgotpw.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_phoneNumberFragment)
+            findNavController().navigate(R.id.sendMoneyBottomSheetFragment)
         }
     }
 

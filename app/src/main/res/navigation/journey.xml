@@ -145,5 +145,35 @@
         android:id="@+id/homeFragment"
         android:name="com.example.newgroupapplication.views.dashboard.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_homeSendMoneyFragment"
+            app:destination="@id/homeSendMoneyFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sendMoneyUnivacitiFragment"
+            app:destination="@id/sendMoneyUnivacitiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeConfirmTransactionFragment"
+        android:name="com.example.newgroupapplication.views.dashboard.HomeConfirmTransactionFragment"
+        android:label="fragment_home_confirm_transaction"
+        tools:layout="@layout/fragment_home_confirm_transaction" />
+    <fragment
+        android:id="@+id/homeSendMoneyFragment"
+        android:name="com.example.newgroupapplication.views.dashboard.HomeSendMoneyFragment"
+        android:label="fragment_home_send_money"
+        tools:layout="@layout/fragment_home_send_money" >
+        <action
+            android:id="@+id/action_homeSendMoneyFragment_to_homeConfirmTransactionFragment"
+            app:destination="@id/homeConfirmTransactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendMoneyUnivacitiFragment"
+        android:name="com.example.newgroupapplication.views.dashboard.SendMoneyUnivacitiFragment"
+        android:label="fragment_send_money_univaciti"
+        tools:layout="@layout/fragment_send_money_univaciti" >
+        <action
+            android:id="@+id/action_sendMoneyUnivacitiFragment_to_homeConfirmTransactionFragment"
+            app:destination="@id/homeConfirmTransactionFragment" />
+    </fragment>
 </navigation>

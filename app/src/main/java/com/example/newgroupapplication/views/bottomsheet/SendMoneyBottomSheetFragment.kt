@@ -1,10 +1,10 @@
 package com.example.newgroupapplication.views.bottomsheet
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.newgroupapplication.R
 import com.example.newgroupapplication.databinding.FragmentSendMoneyBottomSheetBinding
@@ -70,20 +70,27 @@ data class SendMoneyItem(
         }
     }
 
+    private fun otheraccount() {
+        //navigation to other account fragment
+        dismiss()
+    }
+
     private fun ownaccount(){
         //navigation to own account fragment
+        binding.root.setOnClickListener{
+        findNavController().navigate(R.id.action_homeFragment_to_homeSendMoneyFragment)}
         dismiss()
     }
 
     private fun univacitiaccount(){
         //navigation to univaciti account fragment
+       binding.sendMoneyRecycler.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_sendMoneyUnivacitiFragment)
+
         dismiss()
     }
 
-    private fun otheraccount(){
-        //navigation to other account fragment
-        dismiss()
-    }
+
 
 }
 
@@ -91,4 +98,5 @@ enum class SendMoneyType{
     OWNACCOUNT,
     UNIVACITIACCOUNT,
     OTHERACCOUNT
+}
 }
